@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    background-image: url(../images/image.jpg);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:100px;
+}
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+#board{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 50vw;
+    justify-content: center;
+    border: 3px blue outset;
+    border-radius: 1rem;
+    background-color: blue;
+    opacity:calc(0.7);
+}
+#gameStatus{
+    color: white;
+    text-align: center;
+}
+#gameEnd {
+    text-align: center;
+    display: none;
+    margin-top: -5%;
+}
+.row{
+    display: flex;
+    flex:1;
+}
+.cell{
+    flex:1;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+    width: 2%;
+    height: 2cm;
+    margin: 0px;
+    padding: 0px;
+    border: 2px blue inset;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+    
+}
+.cell:hover{
+    background-color: gray;
+}
+#reloadGame{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    height: 6vh;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#reloadGameCpu{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    height: 6vh;
+    width: 18vw;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#reloadGame:hover{
+    background-color: blue;
+}
+#reloadGameCpu:hover{
+    background-color: blue;
+}
+main{
+    margin: -5%;
+}
+
+

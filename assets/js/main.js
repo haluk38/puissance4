@@ -81,6 +81,7 @@ function playGame(cell) {
         playCpu()
     }
     turn++
+
 }
 // FONCTION VICTOIRE et EGALITE //
 function checkWin(cell) {

@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body{
-    background-image: url(../images/image.jpg);
+    background: rgb(20,69,171);
+    background: linear-gradient(90deg, rgba(20,69,171,1) 10%, rgba(0,0,0,1) 50%, rgba(20,69,171,1) 90%);
     background-size:cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:100px;
+    user-select: none;
+    
 }
 h1 {
     text-align: center;
@@ -14,15 +16,12 @@ h1 {
     color: white;
 }
 #board{
-    display: flex;
     flex-direction: column;
-    height: 70vh;
-    width: 50vw;
-    justify-content: center;
     border: 3px blue outset;
-    border-radius: 1rem;
+    border-radius: 7px;
     background-color: blue;
-    opacity:calc(0.7);
+    opacity:calc(0.8);
+    box-shadow: 90px 30px 30px rgba(0, 0, 0);
 }
 #gameStatus{
     color: white;
@@ -31,49 +30,43 @@ h1 {
 #gameEnd {
     text-align: center;
     display: none;
-    margin-top: -5%;
 }
 .row{
     display: flex;
     flex:1;
 }
 .cell{
+    height: 11vh;
+    width: 5vw;
     flex:1;
-    font-size: 50px;
-    display: flex;
+    font-size: 30px;
     align-items: center;
     justify-content: center;
 	text-align: center;
-    width: 2%;
-    height: 2cm;
-    margin: 0px;
-    padding: 0px;
-    border: 2px blue inset;
-    border-radius: 100%;
+    border: 2px blue solid;
+    border-radius: 80px;
     background-color: white;
     cursor: pointer;
-    
 }
 .cell:hover{
-    background-color: gray;
+    background-color: blue;
 }
 #reloadGame{
-    border: 2px solid white;
+    border: 2px white;
     border-radius: 10px;
     background-color: white;
     height: 6vh;
     cursor: pointer;
-    font-size: xx-large;
+    font-size: large;
     font-weight: bold;
 }
 #reloadGameCpu{
-    border: 2px solid white;
+    border: 2px white;
     border-radius: 10px;
     background-color: white;
     height: 6vh;
-    width: 18vw;
     cursor: pointer;
-    font-size: xx-large;
+    font-size: large;
     font-weight: bold;
 }
 #reloadGame:hover{
@@ -82,8 +75,11 @@ h1 {
 #reloadGameCpu:hover{
     background-color: blue;
 }
-main{
-    margin: -5%;
-}
+@media (max-width: 1000px) { 
+    .cell {
+       height: 6vh;
+    }   
+   
+   }
 
 
